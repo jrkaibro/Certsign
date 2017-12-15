@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Object id="Certisign">
+    <Group>
+      <Name>General</Name>
+      <Type>Main</Type>
+      <Childs>
+        <Prop>
+          <Id>Width</Id>
+          <Name>Width</Name>
+          <Type>Text</Type>
+          <Default>100</Default>
+          <Metadata />
+        </Prop>
+        <Prop>
+          <Id>Height</Id>
+          <Name>Height</Name>
+          <Type>Text</Type>
+          <Default>100</Default>
+          <Metadata />
+        </Prop>
+        <Prop>
+          <Id>Version</Id>
+          <Name>Version</Name>
+          <Type>Text</Type>
+          <Default>1.1.0</Default>
+          <Metadata>
+            <Value name="FlagReadonly">True</Value>
+          </Metadata>
+        </Prop>
+        <Group>
+          <Name>Data Bindings</Name>
+          <Childs>
+            <Prop>
+              <Id>Certificate</Id>
+              <Name>Certificate</Name>
+              <Type>Custom</Type>
+              <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+              <Metadata>
+                <Value name="FlagSetValueMethod">SetCertificate</Value>
+                <Value name="FlagGetValueMethod">GetCertificate</Value>
+                <Value name="FlagDataTypeFilter">DataCertificate</Value>
+              </Metadata>
+            </Prop>
+            <Prop>
+              <Id>ListCerticates</Id>
+              <Name>ListCertificates</Name>
+              <Type>Custom</Type>
+              <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+              <Metadata>
+                <Value name="FlagSetValueMethod">SetListCertificates</Value>
+                <Value name="FlagGetValueMethod">GetListCertificates</Value>
+              </Metadata>
+            </Prop>
+          </Childs>
+        </Group>
+        <Group>
+          <Name>Module</Name>
+          <Childs>
+            <Prop>
+              <Id>Ch</Id>
+              <Name>Setup</Name>
+              <Type>Combo</Type>
+              <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+              <Default>3</Default>
+              <Metadata />
+              <Values>
+                <Value id="1" desc="Signature PDF" />
+                <Value id="2" desc="Signature XML" />
+                <Value id="3" desc="Authentication" />
+                <Value id="4" desc="List Certicates" />
+                <Value id="5" desc="Upload Certificate" />
+              </Values>
+            </Prop>
+          </Childs>
+        </Group>
+      </Childs>
+    </Group>
+  </Object>
+</Content>

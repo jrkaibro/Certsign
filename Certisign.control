@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>1.0</Version>
+  <DataSourceAllowed>None</DataSourceAllowed>
+  <CustomDataSources />
+  <AutoGrowSupported>false</AutoGrowSupported>
+  <DefinitionDirectory>C:\Program Files (x86)\GeneXus\GeneXus15\UserControls\Certisign</DefinitionDirectory>
+  <IncludeInControlInfo>false</IncludeInControlInfo>
+  <IsEditable>false</IsEditable>
+  <SupportFiles>
+    <Directory>js</Directory>
+    <Directory>css</Directory>
+    <Directory>fonts</Directory>
+    <Directory>res</Directory>
+    <Directory>source</Directory>
+  </SupportFiles>
+  <iOS_SupportFiles />
+  <Android_SupportFiles />
+  <BB_SupportFiles />
+  <RuntimeRender>CertisignRender.js</RuntimeRender>
+   <GxResources>Certisign.xpz</GxResources>
+  <HeightPropertyName>Height</HeightPropertyName>
+  <WidthPropertyName>Width</WidthPropertyName>
+  <ResizeSupported>true</ResizeSupported>
+  <ObjClass>Certisign</ObjClass>
+  <Description>Certisign</Description>
+  <OldDescriptions />
+  <Id>00000000-0000-0000-0000-000000000000</Id>
+  <Name>Certisign</Name>
+  <Platforms>
+    <Platform>WebLayout</Platform>
+  </Platforms>
+  <ShowMethod>show</ShowMethod>
+  <ReferencedFiles>
+    <File>js\jquery-ui.min.js</File>
+    <File>js\jquery.blockUI.js</File>
+    <File>js\signature-form.js</File>
+    <File>js\lacuna-web-pki-2.6.1.js</File>
+  </ReferencedFiles>
+  <iOS_ReferencedFiles />
+  <Android_ReferencedFiles />
+  <BB_ReferencedFiles />
+  <Constructor>
+    <Parameters />
+    <Name>Certisign</Name>
+  </Constructor>
+  <PropertiesDefinition>CertisignProperties.xml</PropertiesDefinition>
+  <DesignRender>CertisignRender.xsl</DesignRender>
+  <PlatformDefault>0</PlatformDefault>
+  <iOS_PlatformDefault>0</iOS_PlatformDefault>
+  <Android_PlatformDefault>0</Android_PlatformDefault>
+  <ControlType />
+  <Categories />
+  <Events />
+  <Methods />
+  <Actions />
+  <IsPublic>true</IsPublic>
+  <Android_IsScrollable>false</Android_IsScrollable>
+</ControlDefinition>
